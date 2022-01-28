@@ -8,6 +8,6 @@ data2 = data[0]['rates']
 column=list((data2[0]).keys()) 
 
 with open('waluty.csv', 'w', newline='') as output_file:
-    fc = csv.DictWriter(output_file, fieldnames=column)
+    fc = csv.DictWriter(output_file, delimiter =';' , fieldnames=column)
     fc.writeheader()
     fc.writerows(data2)
