@@ -1,19 +1,10 @@
 
 <label for="waluty">Wybierz symbol waluty:</label>
 
-<select name="waluta" id="waluty">
-  <option value="USD">USD</option>
-  <option value="AUD">AUD</option>
-  <option value="CAD">CAD</option>
-  <option value="HUF">HUF</option>
-  <option value="CHF">CHF</option>
-  <option value="GBP">GBP</option>
-  <option value="JPY">JPY</option>
-  <option value="CZK">CZK</option>
-  <option value="DKK">DKK</option>
-  <option value="NOK">NOK</option>
-  <option value="SEK">SEK</option>
-  <option value="XDR">XDR</option>
+<select name="kody" >
+    {% for i in kody %}
+        <option value="{{kody}}">{{kody}}</option>
+    {% endfor %}  
 </select>
 
 <br>
